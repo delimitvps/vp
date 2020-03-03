@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget https://github.com/delimitvps/vp/master/Install/list > /dev/null 2>&1
+wget https://raw.githubusercontent.com/delimitvps/vp/master/Install/list > /dev/null 2>&1
 
 clear
 [[ "$EUID" -ne 0 ]] && echo -e "\033[1;33mDesculpe, \033[1;33mvocê precisa executar como root\033[0m" && rm -rf $HOME/Plus > /dev/null 2>&1 && return 1
