@@ -82,7 +82,7 @@ else
 clear
 echo -e "\E[44;1;37m              INSTALADOR SQUID                \E[0m"
 echo ""
-IP=$(wget -qO- ipv4.icanhazip.com)
+IP=$(wget -qO- ifconfig.io)
 echo -ne "\033[1;32mPARA CONTINUAR CONFIRME SEU IP: \033[1;37m"; read -e -i $IP ipdovps
 if [[ -z "$ipdovps" ]];then
 echo -e "\n\033[1;31mIP invalido\033[1;32m"
